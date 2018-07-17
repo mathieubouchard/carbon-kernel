@@ -287,7 +287,7 @@ public class ReadOnlyLDAPUserStoreManager extends AbstractUserStoreManager {
             String connectionName = realmConfig.getUserStoreProperty(LDAPConstants.CONNECTION_NAME);
             if (StringUtils.isEmpty(connectionName)) {
                 throw new UserStoreException(
-                        "Required ConnectionNme property is not set at the LDAP configurations");
+                        "Required ConnectionName property is not set at the LDAP configurations");
             }
             String connectionPassword =
                     realmConfig.getUserStoreProperty(LDAPConstants.CONNECTION_PASSWORD);
